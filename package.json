@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,json} && prettier --write *.{js,jsx,ts,tsx,json}"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
@@ -23,6 +25,8 @@
     "@types/react": "^17.0.40",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.5.1",
     "typescript": "^4.6.2"
   }
 }
