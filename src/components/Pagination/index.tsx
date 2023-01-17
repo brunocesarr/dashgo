@@ -3,7 +3,7 @@ import { PaginationItem } from './PaginationItem';
 
 export function Pagination() {
   return (
-    <Stack direction="row" mt="8" justify="space-between" align="center">
+    <Stack direction={["column", "row"]} mt="8" justify="space-between" align="center">
       <Box>
         <b>0</b> - <b>10</b> of <b>100</b>
       </Box>
