@@ -1,4 +1,13 @@
-import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, useBreakpointValue } from '@chakra-ui/react';
+import {
+  Box,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import { SidebarNav } from './SidebarNav';
 import { useSidebarDrawer } from '../../contexts/SidebarDrawerContext';
 
@@ -15,15 +24,15 @@ export function Sidebar() {
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay>
           <DrawerContent bg="gray.800" p="4">
-            <DrawerCloseButton mt="6"/>
+            <DrawerCloseButton mt="6" />
             <DrawerHeader>Navigation</DrawerHeader>
             <DrawerBody>
-              <SidebarNav/>
+              <SidebarNav />
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    )
+    );
   }
 
   return (

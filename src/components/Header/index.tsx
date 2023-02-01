@@ -25,14 +25,13 @@ export function Header() {
       mt="4"
       px="6"
       align="center">
-
-      { !isWideVersion && (
-        <IconButton 
-          icon={<Icon as={RiMenuLine} />} 
+      {!isWideVersion && (
+        <IconButton
+          icon={<Icon as={RiMenuLine} />}
           fontSize="24"
           variant="unstyled"
           onClick={onOpen}
-          aria-label={'Open Navigation Button'} 
+          aria-label={'Open Navigation Button'}
           marginRight="2"
         />
       )}
